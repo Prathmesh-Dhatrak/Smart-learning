@@ -2,7 +2,7 @@
   <div style="position: relative">
     <headerComponent />
     <div class="alphabetscards-list container">
-      <div @click="onSlideShow(0)" class="alphabetscard 1">
+      <div @click="onSlideShow(0)" class="alphabetscard 1 p-3">
         <div class="alphabetscard_image"></div>
         <div class="alphabetscard_title alphabetstitle-white">
           <p>A</p>
@@ -131,6 +131,7 @@
           <p>U</p>
         </div>
       </div>
+      <div class="alphabetscard 4" style="visibility: hidden"></div>
       <div @click="onSlideShow(21)" class="alphabetscard 4">
         <div class="alphabetscard_image"></div>
         <div class="alphabetscard_title alphabetstitle-white">
@@ -149,20 +150,19 @@
           <p>X</p>
         </div>
       </div>
-      <div class="d-flex">
-        <div @click="onSlideShow(24)" class="alphabetscard 4 mx-1">
-          <div class="alphabetscard_image"></div>
-          <div class="alphabetscard_title alphabetstitle-white">
-            <p>Y</p>
-          </div>
-        </div>
-        <div @click="onSlideShow(25)" class="alphabetscard 4 mx-1">
-          <div class="alphabetscard_image"></div>
-          <div class="alphabetscard_title alphabetstitle-white">
-            <p>Z</p>
-          </div>
+      <div @click="onSlideShow(24)" class="alphabetscard 4">
+        <div class="alphabetscard_image"></div>
+        <div class="alphabetscard_title alphabetstitle-white">
+          <p>Y</p>
         </div>
       </div>
+      <div @click="onSlideShow(25)" class="alphabetscard 4">
+        <div class="alphabetscard_image"></div>
+        <div class="alphabetscard_title alphabetstitle-white">
+          <p>Z</p>
+        </div>
+      </div>
+      <div class="alphabetscard 4" style="visibility: hidden"></div>
     </div>
     <!-- *********************************************** -->
     <div>
@@ -235,6 +235,7 @@ export default {
   margin: 30px auto !important;
   width: 100px !important;
   height: 100px !important;
+
   border-radius: 10px !important;
   background-image: url("https://i.redd.it/b3esnz5ra34y.jpg");
   background-size: cover;
